@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Users</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+    <script>
+    
+    $(document).ready(function(){
+
+        $("#submitbutton").click(function(){
+
+            var name = $("#firstname").val();
+            var lastname = $("#lastname").val();
+            var email = $("#email").val();
+            var contact = $("#contact").val();
+            $("table").append("<tr><td>" + name + "</td><td>" + lastname + "</td><td>" + email + "</td><td>" + contact + "</td></tr>");
+            return false;
+        })
+
+
+
+    });
+
+    
+    </script>
+
+
+
+</head>
+<body>
+
+    <div id="wrapper">
+        
+        <table>
+           <tr>
+               <th>First Name</th>
+               <th>Last Name</th>
+               <th>Email Address</th>
+               <th>Contact #</th>
+           </tr>
+           <tr>
+
+           </tr>
+        </table>
+        
+
+        <h2>Add User</h2>
+
+        <form action="test.php">
+            <div>
+                <label for="firstname">First Name:</label><input id="firstname" name="firstname" type="text">
+                <label for="lastname">Last Name:</label><input id="lastname" name="lastname" id="lastname" type="text">
+                <label for="Email">Email:</label><input id="email" name="Email" type="text">
+                <label for="contact">Contact:</label><input id="contact" name="contact" type="text">
+                <input id="submitbutton" name="submitbutton" type="submit" value="Add User">
+            </div>
+        </form>
+
+
+
+    </div>
+
+
+</body>
+</html>

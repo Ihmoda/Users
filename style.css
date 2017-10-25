@@ -1,0 +1,61 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+#wrapper {
+    width: 970px;
+    height: 1000px;
+    background: white;
+    padding: 10px;
+}
+
+
+h2 {
+    font-size: 40px;
+    margin-top: 40px;
+    border-bottom: 1px solid black;
+    display: inline-block;
+    width: 350px;
+}
+
+form {
+    margin-top: 10px;
+    margin-left: 40px;
+}
+
+label{
+    display: inline-block;
+    float: left;
+    clear: left;
+    width: 100px;
+    text-align: right;
+    margin-top: 10px;
+}
+
+input {
+  display: inline-block;
+  float: left;
+  margin-top: 10px;
+  margin-right: 5px;
+}
+
+#submitbutton {
+    clear: left;
+    margin-top: 30px;
+    margin-left: 205px;
+}
+
+
+table{
+    display: block;
+    table-layout: fixed;
+    text-align: center;
+
+}
+
+th {
+    font-size: 24px;
+    height: 50px;
+    width: 200px;
+}
